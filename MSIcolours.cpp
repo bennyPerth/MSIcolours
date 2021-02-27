@@ -1,4 +1,4 @@
-#include "MSIcolours.h"
+me#include "MSIcolours.h"
 #include "ui_MSIcolours.h"
 
 #include <QSettings>
@@ -159,7 +159,7 @@ void MainWindow::on_btnExit_clicked() {
 
   // update the home/user/bin/changeColour script so it has the latest keyboard colours
   // the script is run after a suspend is resumed
-  // the foolowing file runs the changeColour script /usr/lib/systemd/system-sleep/changeColour
+  // the following file runs the changeColour script /usr/lib/systemd/system-sleep/resumeKeyboardColour
 
   QByteArray theWholeFile;
   QFile scriptFile(binScript);
@@ -176,9 +176,9 @@ void MainWindow::on_btnExit_clicked() {
   theWholeFile.replace(lastIndex, endOfLineIndex-lastIndex, QByteArray(lastUsedArray) );
 
   if(scriptFile.open(QIODevice::WriteOnly)) {
-  scriptFile.write(theWholeFile);
-  scriptFile.close();
-  }
+    scriptFile.write(theWholeFile);
+    scriptFile.close();
+    }
 
 }  // end of on_btnExit_clicked
 
