@@ -1,0 +1,40 @@
+#!/bin/sh
+
+#Usage: msi-keyboard [options]
+#Keyboard colour changer for MSI steelseries keyboards
+
+#Options:
+#  -h, --help           Displays this help.
+#  -v, --version        Displays version information.
+#  -m, --mode <mode>    set colour <mode>: normal, gaming, breathe, demo, wave
+#  -c, --colour <colour>  set a <colour> using the format: region,colour,intensity
+
+#Available regions:
+
+#left
+#middle
+#right
+
+#Available colours:
+
+#off
+#red
+#orange
+#yellow
+#green
+#sky
+#blue
+#purple
+#white
+
+#Available intensities:
+
+#high
+#medium
+#low
+#light
+
+
+msi-keyboard -m normal -c left,green,low -c middle,green,medium -c right,green,high
+
+
