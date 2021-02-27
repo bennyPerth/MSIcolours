@@ -1,4 +1,4 @@
-me#include "MSIcolours.h"
+#include "MSIcolours.h"
 #include "ui_MSIcolours.h"
 
 #include <QSettings>
